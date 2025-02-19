@@ -1,0 +1,31 @@
+.html
+
+HTML >>HYPERTEXT MARKUP LANGUAGE<<
+     >>Structure
+     >>Layout
+
+     Skeleton
+     >>Head
+     >>Body
+     >>Title
+     >>Links
+     >>Images
+     >>Tables
+     >>Forms
+
+
+FIRST WEBPAGE >>Create a webpage >> Layout >>Structure
+Blueprint >>
+        >> Choose and plan it >> Sketch it >> Design it >> Code it >> Test it >> Publish it
+
+Tags
+
+    >> Head
+    >> Body
+
+Install >> plugin >> extension >> html5
+
+revolves areound TAGS
+opening and closing tags
+<tag>text</tag>
+
