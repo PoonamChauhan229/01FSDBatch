@@ -1,0 +1,53 @@
+JS >> Features >>actionable >> interactive >> dynamic
+>>life >>active >> actionable>> interactive
+
+Facebook >> Old Application
+         >> interactive
+
+Surrounds us >>JS >> interactiveness >>life
+
+Brendan Eich in 1995 >>JS 
+Brendan Eich >> Mozilla >> Netscape >> Netscape Communications >> Netscape Communications Corp.
+
+
+Declare the variable in JS
+
+3 keywords
+var
+let
+const
+
+var 
+declare    ✅✅✅✅
+assign     ✅✅✅✅
+reassign   ✅✅✅✅
+redeclare  ✅✅✅✅ ❌❌❌❌ 
+
+var a = 10
+a=2000
+a=5000
+var a=200
+var a=1000
+
+
+let 
+declare   ✅✅✅✅
+assign    ✅✅✅✅
+reassign  ✅✅✅✅
+redeclare ❌❌❌❌
+
+let a = 10
+a=200
+a=500
+
+const
+declare   ✅✅✅✅
+assign    ✅✅✅✅
+reassign  ❌❌❌❌
+redeclare ❌❌❌❌
+
+constant >>> immutable
+
+const a = 10
+
+Datatypes of JS
