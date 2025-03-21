@@ -1,0 +1,104 @@
+<!-- 
+DOM ???
+DOCUMENT OBJECT MODEL ???
+DOCUMENT >> HTML PAGE >> BROWSER
+OBJECT MODEL >> DATA MODEL >> attributes >> key :value pair
+MODEL >> TREE STRUCTURE
+
+DOM TREE
+DYNAMICALLY  >> STATIC 
+
+js >> DOM
+
+child parent relarionship 
+html
+    >head
+        >meta
+        >title
+    >body
+        >table
+            >n no of tags
+        >p
+        >h1
+        .....
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+</style>
+<body>
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event -->
+    <h1 id="titleHeading" class="titleclass">Home is Sweet Home</h1>
+    <div class="titleclass">HI</div>
+    <h1>Title</h1>
+    <h1>HTML</h1>
+    <!-- onclick="">> FunctionName() >> anyName -->
+    <button onclick="getClicked()" on>Click Me</button>
+    <br/>
+    <input type="text" name="" id="" oninput="getText(event)">
+    <!-- onfocus -input event
+         onblur  -input event
+         onchange -input event
+         oninput -input event
+         onclick -mouse event
+         onkeydown - keyboard
+
+    
+    -->
+        <script>
+
+            function getClicked(){
+                console.log("Btn is clicked")
+                console.log(2+2)
+            }
+            function getText(event){
+                console.log("Input Text Changed")
+                console.log(event.target.value)
+            }
+
+
+            let test=document.getElementById('titleHeading') // only1 
+            let test2=document.getElementsByClassName('titleclass') // multiple
+            let test3=document.getElementsByTagName('h1')     //multiple
+
+
+            console.log(test)
+            console.log(test2)
+            console.log(test3)
+
+            test.innerText="Television"
+
+
+                // create an element 
+                // document.createElement()
+
+                let heading1=document.createElement('div') // createing an h1 tag
+                
+                // pass the text/content to the element
+                // innerText ||.innerHTML
+                // heading1.innerHTML="Todays Topic DOM" // text >> acceptable
+                 heading1.innerHTML=`<h1 class="xyz">hello world</h1>`// tag >> acceptable
+                 heading1.style.backgroundColor="red"
+                 heading1.style.textAlign="center"
+
+                //  class , id attribute
+                heading1.setAttribute("id","title")
+
+                // heading1.innerText="Today new topic"             
+                // heading1.innerText=`<h1>hello world</h1>` // not accepatble
+                // render that in the broswer >> append()
+                document.body.append(heading1)
+
+                // Events >> click , mouseover , mouseout
+        </script>
+</body>
+</html>

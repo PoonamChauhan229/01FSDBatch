@@ -1,0 +1,86 @@
+<!-- 
+ Advance concept 
+Promise >> oath >>promise 
+2 freinds >> meet >>lunch >>2pm
+Promise >>
+pending 
+fullfilment    >>lunch table >> food
+no fulfilment  >> disappointment >> no food
+
+JS
+3 states
+initial state >> Pending
+Fulfilled     >> Resolved >> Value     >>.then()
+   OR
+Rejected      >> Error >> ERROR Message >>.catch()
+
+
+new Keyword >> Promise >> Object
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const p1=new Promise((resolve,reject)=>{
+             // if(condition){block of code}else{block of code}
+             let a=30;
+             if(a>20){
+                resolve("Success, Met at The Lunch time")
+             }else{
+                reject("Failed, Disappointed")
+             }
+        })
+
+        //console.log(p1)
+        // p1.then((data)=>console.log(data)).catch((error)=>console.log(error))
+
+
+        // async await 
+        // JS >>
+        // asynchronous 
+
+        // synchronous >> line by line 
+
+        // 1-10 >> fast >> not waiting time                    >> Executed
+        // 11-15 >> slow >> waiting time is lot                >> Wait.........
+        // 15-20 >> fast >> not waiting time                   >> Not Excecute
+
+        // async
+        // 1-10 >> fast >> not waiting time                    >> Executed      >> Executed
+        // 11-15 >> slow >> waiting time is lot                >> Wait......... >> Wait & Execute
+        // 15-20 >> fast >> not waiting time                   >> Not Excecute  >> Executed
+
+
+        // asynchronous operations >> function 
+        function functionName(){
+            // block of code
+        }
+
+        async function functionName(){
+            // block of code
+            // await >> executed
+        }
+        // try catch
+
+        async function test(){
+            try{
+                let res=await p1;
+                console.log(res)
+            }catch(error){
+                console.log(error)
+            }
+        
+            }
+        test() // calling the function
+    </script>
+</body>
+</html>

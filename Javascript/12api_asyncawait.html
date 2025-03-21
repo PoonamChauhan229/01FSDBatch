@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- https://jsonplaceholder.typicode.com/posts -->
+     <!-- fetch()
+     communicate >> build the connection >> send the request >> recieve the response 
+     await fetch(url)
+     connection >server > take time to recieve the data
+     await 
+     -->
+
+    <script>
+         let url="https://jsonplaceholder.typicode.com/posts";
+        // let url="https://restcountries.com/v3.1/all"
+
+         async function getPosts(){
+            // GET METHOD
+            // console.log("Date Fetching Starting....")
+            let data=await fetch(url)
+            // console.log(data) // response its not reable format
+            let posts=await data.json() // .json()
+            // console.log(posts)
+
+            for(let i=0;i<posts.length;i++){
+                console.log("Title:-",posts[i].title)
+            }
+        }
+         getPosts();
+    </script>
+</body>
+</html>
